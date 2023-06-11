@@ -33,6 +33,5 @@ function copiar() {
     selection.removeAllRanges();
     selection.addRange(range);
     document.execCommand("copy");
-    alert("Texto copiado");
 };
     //la variable guarda el contenido, el selector lo selecciona y el document.execcomand lo copia al clip
