@@ -23,10 +23,10 @@ h1 img{
 .box1 {
     width: 500px;
     height: 400px;
-    margin: 44px 15px 30px 45px;
+    margin: 44px 15px 30px 65px;
     border-width: 1.5px;
     border-style: solid;
-    border-color: rgb(205, 142, 25);
+    border-color: rgb(205, 94, 25);
     border-radius: 8px;
     background-color: rgb(241, 241, 241);
     grid-area: box1;
@@ -35,10 +35,10 @@ h1 img{
 .box2 {
     width: 400px;
     height: 450px;
-    margin: 30px 45px 70px 15px;
+    margin: 30px 5px 70px 15px;
     border-width: 1.5px;
     border-style: solid;
-    border-color: rgb(205, 142, 25);
+    border-color: rgb(205, 94, 25);
     border-radius: 8px;
     background-color: rgb(241, 241, 241);
     display: flex;
@@ -48,10 +48,14 @@ h1 img{
     grid-area: box2;
 }
 
-/*REVISAR EL MARGIN TOP*/
+.box2 p{
+    display: flex;
+    align-items: center;
+    height: 289px;
+}
 
 .box2 .inputbutton{
-    margin-top: 275px; 
+    margin-top: 5px; 
 }
 
 .inputForm{
@@ -74,11 +78,11 @@ h1 img{
 }  
 
 .inputbutton {
-    border: 0.125em solid  rgb(205, 142, 25);
+    border: 0.125em solid  rgb(205, 94, 25);
     border-radius: 0.9375em;
     box-sizing: border-box;
     color: #fff;
-    background-color: rgb(205, 142, 25);
+    background-color: rgb(205, 94, 25);
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
@@ -101,7 +105,7 @@ h1 img{
 }
   
 .inputbutton:hover {
-    color: rgb(205, 142, 25);
+    color: rgb(205, 94, 25);
     background-color: transparent;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);

@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./media/encrypt.png">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
     <title>Encriptador de texto</title>
 </head>
 <body>
     <section class="display">
         <h1>Alura Encrypt<img src="./media/encrypt.png" alt=""></h1>
         <div class="box1">
-            <input type="text" class="inputForm" placeholder="Ingrese el texo a ecriptar...">
+            <input type="text" class="inputForm" id="textoEncriptado" placeholder="Ingrese el texo a ecriptar...">
             <div class="buttons">
-                <input class="inputbutton" type="button" value="Encriptar">
-                <input class="inputbutton" type="button" value="Desencriptar">
+                <input class="inputbutton" id="encriptar" type="button" value="Encriptar">
+                <input class="inputbutton" id="desencriptar" type="button" value="Desencriptar">
             </div>
         </div>
         <div class="box2">
-            <p>.</p>
-            <input class="inputbutton" type="button" value="Copiar">
+          <p id="textoDesencriptado"></p>
+          <input class="inputbutton" id="copiar" type="button" value="Copiar">
         </div>
         <div class="signature">
             <p>Designed and programmed by <em>Melanie Brown</em></p>
@@ -34,4 +36,12 @@
           </div>          
     </section>
 </body>
+<script>
+  var btn = document.querySelector("#encriptar");
+  btn.onclick = encriptar; //llama la funcion creada
+  var btn2 = document.querySelector("#desencriptar");
+  btn2.onclick = desencriptar;
+  var btn3 = document.querySelector("#copiar");
+  btn3.addEventListener("click", copiar);
+</script>
 </html>
